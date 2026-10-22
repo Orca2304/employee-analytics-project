@@ -1,0 +1,41 @@
+EMPLOYEE DATA ANALYTICS REPORT
+========================================
+Total employees : 300
+Departments     : 6
+
+Salary statistics
+  mean   : Rs 1,086,646
+  median : Rs 1,038,750
+  std    : Rs 340,818
+  p25    : Rs 828,700
+  p75    : Rs 1,294,350
+  p90    : Rs 1,529,700
+
+Department summary (SQL GROUP BY)
+  department  headcount  avg_salary  min_salary  max_salary  avg_performance
+Data Science         32   1439381.0    969900.0   2064500.0             3.48
+ Engineering         86   1358029.0    919200.0   2042000.0             3.44
+     Finance         45   1023116.0    589800.0   1566400.0             3.60
+       Sales         75    893979.0    559300.0   1590400.0             3.41
+   Marketing         29    858221.0    560500.0   1401200.0             3.37
+          HR         33    762612.0    492900.0   1078600.0             3.40
+
+Average salary by gender
+  Female : Rs 1,062,463
+  Male   : Rs 1,103,685
+  Raw pay gap (Male vs Female): 3.73%
+  (Unadjusted: does not control for role, department or experience.)
+
+Correlation experience-salary : 0.492
+Correlation performance-salary: 0.046
+Linear fit: each extra year of experience ~ Rs 31,269 more salary
+
+Salary outliers within department (|z| > 2.5): 3
+
+Top 5 earners
+ emp_id         name   department       job_title    salary
+    102   Diya Joshi Data Science     ML Engineer 2064500.0
+     63  Ishaan Nair  Engineering     QA Engineer 2042000.0
+     43  Sanjay Nair Data Science     ML Engineer 2035900.0
+    268 Meera Sharma  Engineering DevOps Engineer 2003300.0
+     38 Vivaan Singh Data Science  Data Scientist 1994000.0
